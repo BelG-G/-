@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char** argv) {
+	int a[100];
+   int i;
+  int max = -11;
+  int pmin = 1;
+  int sum = 0;
+  int pr =1 ;
+  
+ for (i = 1; i <= 5; i++)	{
+ 
+   cin >> a[i];
+   if (a[i]>max) max = a[i];
+   if (a[pmin]> a[i]) pmin =i;
+   sum += a[i];
+   pr *= a[i];
+	}
+ 
+cout << sum << " " << pr << " " <<  max <<  " " << pmin;
+ cout << '\n';
+ for (i = 5; i !=0; i--) cout << a[i] << " "; 
+	
+	return 0;
+}
